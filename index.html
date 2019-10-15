@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>PWA night 6 - Gridsome</title>
+		<title>PWA night 10 - PWA + Business</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -31,6 +31,10 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
+		<style>
+		  .reveal section img { background:none; border:none; box-shadow:none; }
+	  </style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -41,7 +45,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3><span class="no-transform">PWAの事例もろもろ</span></h3>
+					<h3><span class="no-transform">ビジネスソリューションとしてのPWA</span></h3>
 					<p>
 						Takeshi Amano</a>
 					</p>
@@ -57,41 +61,49 @@
 					<p class="fragment">カナダの大学卒業</p>
 					<p class="fragment">Gengoの初期メンバー</p>
 					<p class="fragment">PayPalのエンジニア</p>
-					<p class="fragment">ウクライナとベラルーシのパートナーとオフショア開発</p>
+					<p class="fragment">東欧のパートナーとオフショア開発</p>
 				</section>
 
 				<section>
-					<h3><span class="no-transform">気になる事例紹介</span></h3>
-				</section>
-
-				<section>
-					<h3><span class="no-transform">事例#1 VueStoreFront</span></h3>
-					<p class="fragment">VueでできたPWAのECサイト用のライブラリ</p>
+					<h3>PWAの周り</h3>
+					<p class="fragment">クライアントワークが増えてきた</p>
+					<p class="fragment">話すフェーズから作るフェーズに</p>
+					<p class="fragment">技術の選択肢も多い</p>
+					<p class="fragment">エンジニアは相変わらず少ない</p>
+					<p class="fragment">作りたいクライアントさん　＞　PWA作れるベンダー</p>
 				</section>
 
 				<section>
 					<h3><span class="no-transform">天野がやっている事例紹介</span></h3>
-					<p class="fragment">Rokes Commons Exchange (暗号通貨取引所)</p>
-					<p class="fragment">IR Japan (IR情報提供)</p>
-					<p class="fragment">Azazel (不動産マッチング)</p>
 				</section>
 
 				<section>
-					<h3><span class="no-transform">事例#1<br>Rokes Commons Exchange</span></h3>
+						<h3><span class="no-transform">事例#1<br>Rokes Commons Exchange</span></h3>
+						<img data-src="/images/rokes-logo.png">
 				</section>
 
 				<section>
 					<h3><span class="no-transform">ビジネスモデル</span></h3>
 					<p class="fragment">暗号通貨取引所運営</p>
 					<p class="fragment">新しい経済圏を構築</p>
-					<p class="fragment">様々なサービスとの連携</p>
 				</section>
 
 				<section>
 					<h3><span class="no-transform">クライアントさんの課題</span></h3>
 					<p class="fragment">スマホ向けのUIの改善</p>
-					<p class="fragment">スマホ専用のUI</p>
-					<p class="fragment">スマホから簡単に取引をできるように</p>
+					<p class="fragment">外部のサービスから連携したい</p>
+				</section>
+
+				<section>
+					<img data-src="/images/rokes1.png" alt="Down arrow">
+				</section>
+
+				<section>
+					<img data-src="/images/rokes2.png" alt="Down arrow">
+				</section>
+
+				<section>
+					<img data-src="/images/rokes3.png" alt="Down arrow">
 				</section>
 
 				<section>
@@ -107,7 +119,9 @@
 				</section>
 
 				<section>
-					<h3><span class="no-transform">画面デモ</span></h3>
+					<h3><span class="no-transform">面白いポイント</span></h3>
+					<p class="fragment">スマホ用のUIだけを作り直し</p>
+					<p class="fragment">PWA用に作ったAPI (GraphQL)は外部サービス連携にも使える</p>
 				</section>
 
 				<section>
@@ -129,22 +143,24 @@
 				<section>
 					<h3><span class="no-transform">現状の技術スタック</span></h3>
 					<p class="fragment">MySQL + Posgres</p>
-					<p class="fragment">Java API</p>
+					<p class="fragment">Apache + Tomcat</p>
 				</section>
 
 				<section>
 					<h3><span class="no-transform">PWAの技術スタック</span></h3>
 					<p class="fragment">MySQL + Postgres</p>
 					<p class="fragment">Lumen (REST API)</p>
-					<p class="fragment">VueJS + Nuxt</p>
+					<p class="fragment">VueJS + Nuxt (Netlify)</p>
 				</section>
 
 				<section>
-					<h3><span class="no-transform">画面デモ</span></h3>
+					<h3><span class="no-transform">面白いポイント</span></h3>
+					<p class="fragment">DB以外は別スタックで構築</p>
+					<p class="fragment">既存システムとの連携が可能に</p>
 				</section>
 
 				<section>
-					<h3><span class="no-transform">事例#3<br>Azazel</span></h3>
+					<h3><span class="no-transform">事例#C<br>Azazel</span></h3>
 				</section>
 
 				<section>
@@ -152,6 +168,12 @@
 					<p class="fragment">不動産のオーナーと賃貸者を直接つなぐ</p>
 					<p class="fragment">不動産業界の無駄をぶっ壊す</p>
 					<p class="fragment">新規サービス</p>
+				</section>
+
+				<section>
+					<h3><span class="no-transform">クライアントさんの課題</span></h3>
+					<p class="fragment">スマホ手軽に物件検索</p>
+					<p class="fragment">パソコンを使っているユーザーは想定していない</p>
 				</section>
 
 				<section>
